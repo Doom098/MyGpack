@@ -28,6 +28,10 @@
             "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
             "value": ""
         },
+        "MONGO_URI":{
+            "description": "get it from mongodb",
+            "value": ""
+        },
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
             "value": ""
