@@ -31,7 +31,6 @@
         "MONGO_URI":{
             "description": "get it from mongodb",
             "value": ""
-            "required": false
         },
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
