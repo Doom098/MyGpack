@@ -10,88 +10,88 @@
         "ultroid"
     ],
     "stack": "container",
-    "env":{
-        "API_ID":{
+    "env": {
+        "API_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": "", 
+            "value": "",
             "required": false
         },
-        "API_HASH":{
+        "API_HASH": {
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
             "required": false
         },
-        "SESSION":{
+        "SESSION": {
             "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
             "value": ""
         },
-        "REDIS_URI":{
+        "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
             "value": ""
         },
-        "REDIS_PASSWORD":{
+        "REDIS_PASSWORD": {
             "description": "Redis endpoint password, from redislabs.com",
             "value": ""
         },
-        "HEROKU_API":{
+        "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
             "value": "",
             "required": false
         },
-        "HEROKU_APP_NAME":{
+        "HEROKU_APP_NAME": {
             "description": "Name of your Heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
             "value": "",
             "required": false
         },
-        "BUILD_CMD":{
-            "description":"do not touch this.",
-            "required":true
+        "BUILD_CMD": {
+            "description": "do not touch this.",
+            "required": true
         },
-        "INSTALL_CMD":{
-            "description":"do not touch this.",
-            "required":true
+        "INSTALL_CMD": {
+            "description": "do not touch this.",
+            "required": true
         },
-        "LAUNCH_CMD":{
-            "description":"do not touch this.",
-            "required":true
+        "LAUNCH_CMD": {
+            "description": "do not touch this.",
+            "required": true
         },
-        "ZIP_LINK":{
-            "description":"ZIP file link.",
-            "required":true
-    },
-    "addons":[
-        
-    ],
-    "buildpacks":[
-        {
-            "url":"https://github.com/heroku/heroku-buildpack-apt.git"
+        "ZIP_LINK": {
+            "description": "ZIP file link.",
+            "required": true
         },
-        {
-            "url":"https://github.com/HasibulKabir/heroku-buildpack-rarlab.git"
-        },
-        {
-            "url":"https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-        },
-        {
-            "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        },  
-        {
-            "url":"https://github.com/code-rgb/heroku-buildpack-google-chrome"
-        },
-        {
-            "url":"https://github.com/code-rgb/heroku-buildpack-chromedriver"
-        },
-        {
-            "url":"https://github.com/chrismytton/heroku-buildpack-jq.git"
-        },
-        {
-            "url":"heroku/python"
-        }
-    ],
-    "formation":{
-        "worker":{
-            "quantity":1,
-            "size":"free"
+        "addons": [
+
+        ],
+        "buildpacks": [{
+                "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+            },
+            {
+                "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab.git"
+            },
+            {
+                "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+            },
+            {
+                "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+            },
+            {
+                "url": "https://github.com/code-rgb/heroku-buildpack-google-chrome"
+            },
+            {
+                "url": "https://github.com/code-rgb/heroku-buildpack-chromedriver"
+            },
+            {
+                "url": "https://github.com/chrismytton/heroku-buildpack-jq.git"
+            },
+            {
+                "url": "heroku/python"
+            }
+        ],
+        "formation": {
+            "worker": {
+                "quantity": 1,
+                "size": "free"
+            }
         }
     }
 }
